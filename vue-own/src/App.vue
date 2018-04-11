@@ -2,29 +2,12 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
-    <form>
-      <input type="text" ref="my_input">
-      <button @click.prevent="getFormValues()">Get values</button>
-    </form>
-
-    Output: {{ output }}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data() {
-    return {
-      output: ''
-    }
-  },
-  methods: {
-    getFormValues() {
-      debugger
-      this.output = this.$refs.my_input.value
-    }
-  }
+  name: 'App'
 }
 </script>
 
